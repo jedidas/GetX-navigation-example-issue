@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_1/app/modules/contact/contact_controller.dart';
+import 'package:getx_1/app/modules/global/drawer_menu.dart';
 import 'package:getx_1/app/routes/app_routes.dart';
 
 class ContactPage extends GetView<ContactController> {
@@ -13,6 +14,7 @@ class ContactPage extends GetView<ContactController> {
         appBar: AppBar(
           title: Text('Contact'),
         ),
+        drawer: DrawerMenu(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

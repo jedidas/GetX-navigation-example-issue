@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_1/app/modules/global/drawer_menu.dart';
 import 'package:getx_1/app/modules/home/home_controller.dart';
 import 'package:getx_1/app/routes/app_routes.dart';
 
@@ -14,6 +15,7 @@ class HomePage extends GetView<HomeController> {
         appBar: AppBar(
           title: Text('Home'),
         ),
+        drawer: DrawerMenu(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
